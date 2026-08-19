@@ -1,0 +1,6 @@
+{
+  "name": "Solis Luxury Expeditions",
+  "description": "Premium travel booking platform featuring curated world journeys, live Supabase database connectivity, bespoke travel planner, and instant bookings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

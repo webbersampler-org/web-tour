@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --color-forest-dark: #0a2118;
+    --color-forest: #0f2e24;
+    --color-forest-card: #153c30;
+    --color-forest-light: #1b4a3c;
+    --color-mint: #70e29b;
+    --color-mint-light: #8bf0af;
+    --color-mint-dark: #58cc84;
+  }
+
+  body {
+    background-color: #0f2e24;
+    color: #f3f4f6;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Forest & Mint Aesthetic Styles */
+.bg-forest-deep {
+  background-color: #0c261e;
+}
+
+.bg-forest {
+  background-color: #0f2e24;
+}
+
+.bg-forest-card {
+  background-color: #143a2e;
+}
+
+.bg-forest-card-light {
+  background-color: #1a4739;
+}
+
+.bg-mint {
+  background-color: #70e29b;
+}
+
+.text-mint {
+  color: #70e29b;
+}
+
+.border-mint {
+  border-color: #70e29b;
+}
+
+.border-mint-soft {
+  border-color: rgba(112, 226, 155, 0.25);
+}
+
+.glow-mint-radial {
+  background: radial-gradient(circle at 50% 30%, rgba(112, 226, 155, 0.18) 0%, rgba(15, 46, 36, 0.05) 55%, transparent 75%);
+}
+
+.glow-mint-ambient {
+  box-shadow: 0 0 60px -15px rgba(112, 226, 155, 0.35);
+}
+
+.glow-mint-subtle {
+  box-shadow: 0 10px 30px -10px rgba(112, 226, 155, 0.2);
+}
+
+/* Glass panel tailored to deep forest green */
+.glass-forest {
+  background: rgba(15, 46, 36, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-forest-card {
+  background: rgba(20, 58, 46, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(112, 226, 155, 0.18);
+}
+
+/* Floating White Booking Bar from reference */
+.floating-search-bar {
+  background: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Ribbon arrow stroke animation */
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-draw-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2.5s ease-out forwards;
+}
+
+/* Custom Forest scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a2118;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e5241;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #70e29b;
+}
